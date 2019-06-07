@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -24925,7 +24924,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="D1" gate="1" x="-203.2" y="76.2"/>
 <instance part="GND16" gate="1" x="-182.88" y="-27.94"/>
 <instance part="SUPPLY6" gate="G$1" x="-180.34" y="-5.08"/>
-<instance part="D8-D13_3.3V" gate="A" x="-233.68" y="-15.24" rot="MR0"/>
+<instance part="D8-D13_3.3V" gate="A" x="-233.68" y="-12.7" rot="MR0"/>
 <instance part="SUPPLY7" gate="G$1" x="-139.7" y="45.72"/>
 <instance part="GND17" gate="1" x="-147.32" y="25.4"/>
 <instance part="PWR" gate="A" x="-129.54" y="30.48"/>
@@ -25921,12 +25920,56 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="12.7" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="D8-D13_3.3V" gate="A" pin="2"/>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A2"/>
+<wire x1="-231.14" y1="-7.62" x2="-213.36" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A3"/>
+<wire x1="-213.36" y1="-10.16" x2="-231.14" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="D8-D13_3.3V" gate="A" pin="3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A1"/>
+<wire x1="-213.36" y1="-2.54" x2="-226.06" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="D8-D13_3.3V" gate="A" pin="1"/>
+<wire x1="-231.14" y1="-5.08" x2="-226.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="-5.08" x2="-226.06" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="D8-D13_3.3V" gate="A" pin="4"/>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A4"/>
+<wire x1="-231.14" y1="-12.7" x2="-213.36" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="D8-D13_3.3V" gate="A" pin="6"/>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A6"/>
+<wire x1="-231.14" y1="-17.78" x2="-213.36" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="LVL_SHIFTER" gate="G$1" pin="B1"/>
 <wire x1="-185.42" y1="-2.54" x2="-185.42" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="-185.42" y1="2.54" x2="-175.26" y2="2.54" width="0.1524" layer="91"/>
 <label x="-175.26" y="2.54" size="1.4224" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="D8-D13_3.3V" gate="A" pin="5"/>
+<pinref part="LVL_SHIFTER" gate="G$1" pin="A5"/>
+<wire x1="-231.14" y1="-15.24" x2="-213.36" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -25943,48 +25986,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="POWER" gate="G$1" pin="A"/>
 <wire x1="-134.62" y1="76.2" x2="-134.62" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="81.28" x2="-142.24" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="D8-D13_3.3V" gate="A" pin="1"/>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A2"/>
-<wire x1="-231.14" y1="-7.62" x2="-213.36" y2="-7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A3"/>
-<pinref part="D8-D13_3.3V" gate="A" pin="2"/>
-<wire x1="-213.36" y1="-10.16" x2="-231.14" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="D8-D13_3.3V" gate="A" pin="3"/>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A4"/>
-<wire x1="-231.14" y1="-12.7" x2="-213.36" y2="-12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A5"/>
-<pinref part="D8-D13_3.3V" gate="A" pin="4"/>
-<wire x1="-213.36" y1="-15.24" x2="-231.14" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="D8-D13_3.3V" gate="A" pin="5"/>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A6"/>
-<wire x1="-231.14" y1="-17.78" x2="-213.36" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="LVL_SHIFTER" gate="G$1" pin="A7"/>
-<pinref part="D8-D13_3.3V" gate="A" pin="6"/>
-<wire x1="-213.36" y1="-20.32" x2="-231.14" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
